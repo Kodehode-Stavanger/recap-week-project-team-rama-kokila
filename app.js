@@ -109,3 +109,34 @@ const topSellers = [
     logo: "mario-kart-logo.jpg",
   },
 ];
+
+const titleResult = document.getElementById("title");
+const descResult = document.getElementsByClassName("game-description");
+const gameContainer = document.getElementById("gameCards");
+
+topSellers.forEach((obj) => {
+  const card = document.createElement("div");
+  card.classList.add("cards");
+  //   card.setAttribute("style");
+
+  for (const key in obj) {
+    if (key === "description") {
+      const descriptionParagraph = document.createElement("p");
+      descriptionParagraph.classList.add("desc-para");
+      descriptionParagraph.textContent = obj[key];
+      card.append(descriptionParagraph);
+    } else if (key === "logo") {
+      const imgJpg = document.createElement("img");
+      imgJpg.classList.add("img-jpg");
+      imgJpg.src = `./logos/${obj[key]}`;
+      card.append(imgJpg);
+    } else {
+      const keyValue = document.createElement("p");
+      keyValue.classList.add("title-para");
+      keyValue.textContent = `${key}: ${obj[key]}`;
+      card.append(keyValue);
+    }
+  }
+
+  gameContainer.append(card);
+});

@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(0, 9%, 84%, 0.265);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("RAKO/6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  font-weight: bold;
+  margin: 20px 20px;
+  color: aliceblue;
+}
+
+p {
+  color: aliceblue;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid #ccc; */
+  border-radius: 8px;
+  /* padding: 10px; */
+  max-width: 250vh;
+}
+
+.cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  /* justify-content: baseline; */
+  border: 1px solid #ccc;
+  background-color: hsla(0, 0%, 0%, 0.045);
+  backdrop-filter: blur(10px);
+  /* filter: drop-shadow(0 0 0.75rem rgb(59, 49, 51)); */
+  box-shadow: 0 4px 8px 0 rgba(231, 232, 238, 0),
+    0 6px 20px 0 rgba(239, 238, 238, 0.364);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 300px;
+  max-width: 250px;
+  min-height: 350px;
+}
+
+.img-jpg {
+  padding: 5px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.title-para {
+  text-transform: capitalize;
+  font-size: 18px;
+  padding: 3px 0px;
+  font-weight: bolder;
+}
+
+.desc-para {
+  padding: 25px 0px;
+  font-size: 20px;
+  border-top: solid rgb(236, 230, 230);
+  border-width: 1px;
+  border-bottom: solid rgb(234, 232, 232);
+  border-width: 1px;
+  /* background-color: rgba(240, 248, 255, 0.128); */
+}
