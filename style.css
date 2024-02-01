@@ -5,11 +5,14 @@
 }
 
 body {
-  background-color: hsla(0, 9%, 84%, 0.265);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("RAKO/6.jpg");
+  /* background-color: hsla(0, 9%, 84%, 0.265); */
+  background-image: url("rako/6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.darken-image {
+  filter: brightness(20%);
 }
 
 h1 {
@@ -20,10 +23,12 @@ h1 {
   font-weight: bold;
   margin: 20px 20px;
   color: aliceblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 p {
   color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card-container {
