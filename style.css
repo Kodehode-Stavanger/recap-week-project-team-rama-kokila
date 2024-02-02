@@ -8,7 +8,7 @@ body {
   /* background-color: hsla(0, 9%, 84%, 0.265); */
   background-image: url("rako/6.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .darken-image {
